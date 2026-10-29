@@ -1,0 +1,37 @@
+name: Guide correction
+description: Report an inaccurate, outdated, or unsafe part of the guide.
+title: "[Correction]: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include console identifiers, account credentials, private keys, or flash backups.
+  - type: input
+    id: section
+    attributes:
+      label: Affected section
+      description: Link to or name the heading in the guide.
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is inaccurate or unclear?
+      description: Explain the problem and the expected correction.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or references
+      description: Link to upstream documentation or provide reproducible details.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Relevant setup
+      description: Include PS3 model, CFW version, Petitboot source, and Linux distribution if relevant.
+    validations:
+      required: false
