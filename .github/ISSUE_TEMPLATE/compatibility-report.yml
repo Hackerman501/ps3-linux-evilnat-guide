@@ -1,0 +1,52 @@
+name: Compatibility report
+description: Share a tested compatibility result for a PS3 Linux setup.
+title: "[Compatibility]: "
+labels: ["compatibility"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Report only details you are comfortable sharing publicly. Do not provide console IDs or flash backups.
+  - type: input
+    id: ps3-model
+    attributes:
+      label: PS3 model
+      placeholder: e.g. FAT model family
+    validations:
+      required: true
+  - type: input
+    id: cfw
+    attributes:
+      label: CFW and version
+    validations:
+      required: true
+  - type: input
+    id: petitboot
+    attributes:
+      label: Petitboot source or version
+    validations:
+      required: false
+  - type: input
+    id: distro
+    attributes:
+      label: Linux distribution and architecture
+    validations:
+      required: true
+  - type: dropdown
+    id: target
+    attributes:
+      label: Installation target
+      options:
+        - Live USB
+        - External USB drive
+        - Internal drive
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Result and notes
+      description: Describe what worked, what did not, and any relevant limitations.
+    validations:
+      required: true
