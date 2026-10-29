@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: PS3 DevWiki
+    url: https://www.psdevwiki.com/ps3/Distributions
+    about: Check community documentation and Linux distribution references.
+  - name: r/ps3homebrew
+    url: https://www.reddit.com/r/ps3homebrew/
+    about: Ask the wider PS3 homebrew community for general support.
